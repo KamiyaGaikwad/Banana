@@ -2,8 +2,8 @@ var btn1 = document.querySelector("#btnn");
 var text = document.querySelector("#t1");
 var outp = document.querySelector("#output");
 
-//var serverURL = "https://api.funtranslations.com/translate/minion.json"
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json"
+//var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 function constructurl(intput){
     return serverURL + "?text=" + text.value;
