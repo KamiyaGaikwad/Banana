@@ -1,74 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-
+/* @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary: #F2C94C;
-    --black: #333333;
-    --width-break:600px
+  --primary: #f2c94c;
+  --black: #333333;
+  --width-break: 600px;
+  --primary-font: "Architects Daughter", cursive;
+  --read-font: "Klee One", cursive;
 }
 
 body {
-    margin: 0;
-    font-family: 'Kalam', cursive;
-    color: #333333;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--black);
 }
 
 nav {
-    background-color: var(--primary);
-    text-align: center;
+  background-color: var(--primary);
+  text-align: center;
 }
 
 main {
-    margin: auto;
-    padding: 1rem;
-    max-width: var(--width-break);
+  margin: auto;
+  padding: 1rem;
+  max-width: var(--width-break);
 }
 
 textarea {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    min-height: 20vh;
-    margin-top: 2rem;
-    font-size: large;
-    font-family: inherit;
-    padding-left: 1rem;
-    padding-top: 1rem;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 2rem;
+  font-size: large;
+  font-family: var(--read-font);
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 button {
-    background-color: var(--primary);
-    border: none;
-    margin: 1rem 0rem;
-    padding: 1rem 2rem;
-    font-family: 'Kalam', cursive;
-    font-size: large;
-    cursor:pointer;
+  background-color: var(--primary);
+  border: none;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+  border-radius: 1.5rem;
 }
 
-
 #output {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 15vh;
-    max-height: 20vh;
-    overflow:scroll;
-    border: 1px solid var(--black);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 15vh;
+  max-height: 20vh;
+  overflow: scroll;
+  border: 1px solid var(--black);
+  font-family: var(--read-font);
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--primary);
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary);
+  text-align: center;
 }
 
 footer p {
-    max-width: var(--width-break);
-    margin: auto;
+  max-width: var(--width-break);
+  margin: auto;
+}
+
+img {
+  float: left;
+  max-width: 7rem;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
 }
